@@ -19,34 +19,75 @@ In 1970 a company called bell lab created a common software for all computer and
 
 # Basic commands in Linux #
 
-**1.CD** 
-* CD command stands for change directory. It is used to change current working directory other directory or folder.
+Linux provides a CLI (Command Line Interface) to communicate with the OS. Here are the most basic of the Linux Commands
 
-  * ` cd directory_name `
+### 1. CD
 
-**2.LS**
-* LS stands for list. It is used show the list of directory/folder in current working directory/folder.
+ CD command stands for "change directory". With the cd command, you can change your current working directory.
 
-  * ` ls `
+ Syntax :-
+- ` $ cd directory_name `
 
-**3.RM**
-* RM stands for remove. It is used to remove or permanently delete the directory/folder.
+### 2. WHO & WHOAMI
 
-  * ` rm remove_directory_name `
+ who command lets you display the users currently logged in to your Linux operating system in the terminal/shell. To know about how many users are using or are logged-in into a particular Linux-based operating system, user can use the "who" command to get that information.
 
-**4.CP**
-* CP stands for copy. It is used to copy a directory/folder to another location.
+ Syntax :-
+- ` $ who `
 
-  * `cp copy_directory_name `
+ whoami command is used to print the user's name from which they are currently logged-in. In other words, it displays the name of the currently logged-in user in the terminal/shell.
 
-**5.PWD**
-* pwd stands for Print Working Directory. It prints the path of the working directory, starting from the root.
+ Syntax :-
+- ` $ whoami `
 
-  * `pwd directory_name `
+### 3. PWD
 
-**6.exit**
-* exit used for exit the current directory.
+ pwd command stands for "print working directory" and will show you the name of your current working directory – that means “where you are” right now.
 
-  * `exit `
+ Syntax :-
+- ` $ pwd `
 
-**7.**  
+### 4. LS
+
+ ls stands for "list". It is used show the list of directory/folder in current working directory/folder.
+
+ Syntax :-
+- ` $ ls ` 
+
+ | Command | Explanation |
+ | ------- | ----------- |
+ |  ls -l | Display all the file details in list format |
+ |  ls -h | Display all the file details in human readable list format |
+ |  ls -t | Shows all the file in asending order of its creation(new file on top & old file on bottom) |
+ |  ls -r | Show all the file in decending order of its creation(old file on top & new file on bottom) |
+ |  ls -F | To catagorie which file is directory(it add a / in the end if it is a directory) |
+
+
+### 5. TOUCH
+
+ touch command is used to create empty files and also changes the timestamps of existing files on Linux System. Changing timestamps here means updating the access and modification time of files and directories.
+
+ Syntax :-
+- ` $ touch new_directoryname `
+
+### 6. MKDIR
+
+ mkdir stands for "make directory". mkdir command in Linux allows users to create or make new directories in current working directory.
+
+ Syntax :-
+-  ` $ mkdir directory_name `
+
+### 7. HELP
+ 
+ help command used for summary of a particular command and its flag.
+
+ Syntax :-
+- ` $ command_name --help `
+
+### 8. MAN
+
+ man command stands for "manual".It shows all the flag of a particular command in detail way.
+
+ Syntax :-
+- ` $ man command_name `
+
