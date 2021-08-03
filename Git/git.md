@@ -8,7 +8,7 @@
 ## Feature of Git
 
 * If you accidentally change your code and break something, git can revert it.
-* If you accidentally delete your code, using git can help you get it back.
+* If you mistakenly delete your code, using git can assist you catch on back.
 * Sharing your code or work with other developers on the same project.
 * It tracks the changes while someone makes changes in a file with a commit message.
 * By help of this we can deploys the source code on the remote server.
