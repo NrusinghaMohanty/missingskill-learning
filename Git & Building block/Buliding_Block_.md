@@ -116,7 +116,7 @@
 * Linode
 * Beruko
 
-# Project Managemnet Tool
+# Project Management Tool
 
 * It is used to track progress.Example :-
   * JIRA

@@ -93,9 +93,9 @@ let value3 = [...value,...value2]
 console.log(value3) //  ["a", "b", "c", "e", "f", "g"]
 ```
 
-# Destructing
+# Destructuring
 
-**Object destructing**
+**Object destructuring**
 ```javascript
 let obj = {
     name : "babul",
@@ -111,7 +111,7 @@ let { hobby: {second}} = obj;
 console.log (`${name} hobby is ${second}`) // babul hobby is gym
 ```
 
-**Array destructing**
+**Array destructuring**
 ```javascript
 let fruit = ["mango", "banana", "apple"];
 let [a,b,c] = fruit             
