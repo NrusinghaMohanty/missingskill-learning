@@ -1,6 +1,6 @@
 # Introduction 
 
-*Language is catagories in to two type*
+**Language is catagories in to two type**
 
 | Static type | Dynamic type |
 | ----------- | ------------ |
@@ -10,9 +10,9 @@
 ## About javascript 
 
 * Javascript is client side scripting language.
-* Javascript is created in 1995 and initially called as "Livescript". It is maintain by a communtity/organization called as ECMA(created in 1997).
+* Javascript is created by Brendan Eich in 1995 and initially called as "Livescript". Later on it is maintain by a communtity/organization called as ECMA(created in 1997).
 * It is used to programmantically perform action with in the page.
-* Javascript can execute not only in the browser but also on the server.So we can use javascript client a well as a server side language.
+* Javascript can execute not only in the browser but also on the server. So we can use javascript client a well as a server side language.
 
 # control structure 
 
@@ -31,6 +31,7 @@
 | Operator | Explanation | Syntax |
 | -------- | ----------- | ------ |
 | + | Use for performing addition of numbers. |  a+b |
+| + | It also used for concatenation in between strings | "a"+"b" = "ab" |
 | - | Use for subtracting numbers. | a-b |
 | * | Use for multiplication of numbers. | a*b |
 | / | Use for division of numbers. | a/b |
@@ -109,7 +110,7 @@
 
 Example :-
 
-``` 
+```javascript 
 var message = "Hello Welcome"
 function play() {
   console.log(message); // o/p will be "Hello Welcome"
@@ -124,7 +125,7 @@ play();
 
 Example :-
 
-```
+```javascript
 function play() {
   var message = "Hello Welcome";
   console.log(message) // o/p will be "Hello Welcome" 
@@ -138,7 +139,7 @@ console.log(message) // o/p will be not defined
 
 * Variable declared inside nearest pair of curly braces({}) is inside the block scope. They can only be accessed from within that pair of curly braces.It is introduced in ES6 version js so it is only applicable let,const but not for var.  
 
-```
+```javascript
 {
   let message = "Hello Welcome";
   var name = "Rahul";
@@ -161,7 +162,7 @@ console.log(name); // o/p will be "Rahul"
 ### var - 
 How "var" acts in differnet scenario in javascript
 
-```
+```javascript
 1. var a = 5;
 var a = 10;
 var b = 10
@@ -190,11 +191,11 @@ console.log(message) // o/p- Hello world
 
 ```
 
-### let
+### let -
 
 How "let" acts in differnet scenario in javascript
 
-```
+```javascript
 1. let a = 5;
 let a = 10;
 let b = 10
@@ -223,11 +224,11 @@ if(true){
 console.log(message) // o/p- Hello world 
 
 ```
-### const
+### const -
 
 const is just act like "let" but cannot be re-assigned or re-intialized. But in case of object we can re-assigned it but cannot re-intialized.
 
-```
+```javascript
 const a = 10
 a=30
 console.log(a) // o/p - Error
@@ -237,3 +238,67 @@ const b = 30
 console.log(b) // o/p -  'b' has already been declared
 
 ```
+
+# Copy by value and Copy by reference
+
+## Copy by Value
+
+* Javascript passes by value in case of primitive datatypes like Boolean, NULL, undefined, String, and Number. Here it copies the value of one variable into another. If we make any changes to the copied variable, it will not affect the original variable. Both the variables are independent of each other because they are pointing to two different memory locations.
+```javascript
+var a=10;
+var b=a;
+console.log(a); // o/p - 10
+console.log(b); // o/p - 10
+b=b+1;
+console.log(a); // o/p - 10
+console.log(b); // o/p - 11
+```
+* Explanation: Here the value of variable 'a' is assigned to variable 'b'. Even if we change the value of variable 'b', the value of variable 'a' will not change.
+
+## Copy by reference
+
+* Javascript passes by reference in case of non-primitive datatypes likes objects and arrays. Here if we change the value of copied variable then the value of original variable will also change because both the variables are refering to the same memory location.
+
+```javascript
+var original={
+    name : "Rahul",
+    hobby:["dance","reading"]
+}
+var copy=original;
+console.log(original);  //  o/p - { name : 'Rahul', hobby: [ 'dance', 'reading' ] }
+console.log(copy);  //  o/p - { name : 'Rahul', hobby: [ 'dance', 'reading' ] }
+copy.hobby[1]= "painting"
+console.log(original);  //  o/p -{ name : 'Rahul', hobby: [ 'dance', 'painting' ] }
+console.log(copy);  //  o/p - { name : 'Rahul', hobby: [ 'dance', 'painting' ] }
+```
+* Explanation: The value of variable "original" is assigned to variable "copy".Here if we make any changes in the variable "copy" then the value of variable "original" will also change and vice versa.
+
+
+
+```javascript
+var original={
+    name : "Rahul",
+    hobby:["dance","reading"]
+}
+var hobbylist={
+  one:"cooking"
+};
+var copy=hobbylist;
+hobbylist.two=original.hobby;
+
+console.log(original); //  o/p - { name : 'Rahul', hobby: [ 'dance', 'reading' ] }
+console.log(hobbylist); //  o/p - { one: 'cooking', two: [ 'dance', 'reading' ] }
+
+var copy=hobbylist;
+original.name ={
+  list:["Rahul","Babul"]
+}
+copy.two[1]="riding";
+
+console.log(original); //  o/p - { name : { list: [ 'Rahul', 'Babul' ] },hobby: [ 'dance', 'riding' ]}
+ 
+console.log(hobbylist); // o/p -{ one: 'cooking', two: [ 'dance', 'riding' ] }
+console.log(copy); //  o/p - { one: 'cooking', two: [ 'dance', 'riding' ] }
+```
+
+* Explanation: Here changes made in the variable "copy" affects other two variables i.e., original and hobbylist.

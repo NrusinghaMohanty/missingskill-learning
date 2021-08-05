@@ -3,25 +3,26 @@
 ## What is Linux ? 
 
 * First of all I have to clear that Linux is not an operating system like other popular operating systems . It is actually a Linux kernel. Different distributions of Linux makes it comparable to other OS.
-* Linux is an operating system or a kernel distributed under an open-source licens.
+* Linux is an operating system or a kernel distributed under an open-source license.
+* Kernel is the core component of the operating system. It nothing but a lowable software which interact with hardware.  
 * Various companies or entities can make their own version of OS using Linux kernel.
-* Some popular distribution names are
-  - Debian
-    - Ubuntu
-  - Redhat
-    - Fedora
-    - centOS
-    - Mint  
 
 ## History ##
 
-In 1970 a company called bell lab created a common software for all computer and named it as "unix" . Initially, Unix was only found in large organizations like government, university, or larger financial corporations because it was expensive at that time for common people. Then in 1983, Richard Stallman developed GNU project with the goal to make it freely available Unix like operating system and to be used by everyone. But this project failed to gain popularity . Then 1991 a student name Linus Torvolds created a software to interact with system and name it as kernel. Later on Richard stallman and Linus Torvolds came together and created the first Linux based operating system known as GNU Linux.
+* In 1970 a company called bell lab created a common software for all computer and named it as "unix" . Initially, Unix was only found in large organizations like government, university, or larger financial corporations because it was expensive at that time for common people. Then in 1983, Richard Stallman developed GNU project with the goal to make UNIX like OS freely available and to be used by everyone. But this project failed to gain popularity . Then 1991 a student name Linus Torvolds created a software to interact with system and name it as kernel. Later on Richard stallman and Linus Torvolds came together and created the first Linux based operating system known as GNU Linux.
+* Some popular distribution names are
+  - Debian
+    - Ubuntu (based on Debian)
+      - Mint (based on Ubuntu)
+  - Redhat
+    - Fedora(based on Redhat)
+    - centOS (based on Redhat)
 
 # Basic commands in Linux #
 
-Linux provides a CLI (Command Line Interface) to communicate with the OS. Here are the most basic of the Linux Commands
+Linux provides a CLI (Command Line Interface) to communicate with the OS. Here are the most basic of the Linux Commands :-
 
-### **1. CD**
+### 1. CD
 
  CD command stands for "change directory". With the cd command, you can change your current working directory.
 
@@ -122,7 +123,7 @@ Linux provides a CLI (Command Line Interface) to communicate with the OS. Here a
 | Command | Explanation |
 | ------- | ----------- |
 | $ cat file_name | Display or read contents of file on terminal |
-| $ cat > file_name | It overwrite the existing file content |
+| $ cat > file_name | It i use to create new file/It also overwrite the existing file content |
 | $ cat >> file_name | It update or modifying the existing file content |
 
 ### 11. RM & RMDIR
@@ -258,7 +259,6 @@ if we want to rename the file or directory/folder we can use below command,
 | /tmp | It is used when system want something stored temporarily |
 | /etc | Here system configuration or s/w are stored |
 | /lib | System libaries are stored here |
-| /dev | External devices are mounted here(ex. usb,mouse,keyboard etc) |
-| /mnt | ///// | 
+| /dev | External devices are mounted here(ex. usb,mouse,keyboard etc) | 
 | /proc | System level process or information is shown( it not a folder,it is a in memory file) |
 | /opt | s/w related files or data stored here |

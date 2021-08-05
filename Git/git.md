@@ -3,15 +3,15 @@
 ## what is git ?
 
 * Git is an an open-source distributed version control system for tracking changes in computer files.
-* So What is version control system ? it is a system that provides with you the features of keeping a record of your software code changes, who made those changes, and at what time in a repository/folder. it just like a snapshot of every changes you have made in a code.
+* So What is version control system ? It is a system that provides you with the features of keeping a record of your software code changes, who made those changes, and at what time in a repository/folder. It just like a snapshot of every changes you have made in a code.
 
 ## Feature of Git
 
 * If you accidentally change your code and break something, git can revert it.
-* If you mistakenly delete your code, using git can assist you catch on back.
+* If you mistakenly delete your code, git can assist you catch on back.
 * Sharing your code or work with other developers on the same project.
 * It tracks the changes while someone makes changes in a file with a commit message.
-* By help of this we can deploys the source code on the remote server.
+* By help of this we can deploy the source code on the remote server.
 * Experimenting with your code without messing with the production version.
 
 ## Git three stages
@@ -48,11 +48,13 @@ Git has three stages :-
 | git checkout -f | To check all the file to previous commit |
 | git diff | To show the differnece between working directory with staging area |
 | git log | To show all the commit which have done in a file or code |
+| git stash | To save the record of current state in the working directory | 
+| git stash pop | It will show the list of stash file you have saved. |
 
 
-## Brancing 
+## Branching 
 
-* This is probably the most basic use case of a version control system. When you have an app running in production, typically you would not want to change its code as it might impact your live app. So, if you want to make any changes, first you need to create a copy of the original repo, and then work on it. Git allows us to easily create this copy by using Branches. The original repo is usually called the main branch or master branch. The copied branch can be named anything, feature, beta, v1.0, v2, depending on the naming scheme of your team.
+* This is probably the most basic use case of a version control system. When a app is in production stage , we want modify/change the code without affecting the production version of the code. then we need to make a copy of the original repo/code, and then work on it. Branching in git made it possible. The original repo/code is usually called the main branch or master branch. The copied branch can be named anything, feature, beta, v1.0, v2, depending on the naming scheme of your team.
 
 | Command | Explanation |
 | ------- | ----------- |
@@ -65,11 +67,24 @@ Git has three stages :-
 
 ## Cloning
 
-* It's not a good idea to keep your code only in your local machine. If something happens to your computer, you will lose all your code. To prevent this from happening, we normally host our repos in servers like Github, Bitbucket, Codecommit, etc (Github being the most popular one). If your fellow developer wants to work on the code, they will need to download a copy of your code into their local machine. This process of downloading the code into our local machine from a server is called cloning.
+* Keeping the code in the local machine can be risky. If anything happens to the local machine then we might lose the code . In order to avoid such situations, we push our code to servers like Github, Gitlab, Bitbucket etc. If anyone else wants to work on the code then then can download a copy of it into their local machine. This process of downloading the code into our local machine from a server is called cloning.
 
 | Command | Explanation |
 | ------- | ----------- |
-| git clone clongefile_http | To clone a file/code |
+| git clone clongefile_http | To clone a file/code of default branch |
 
 ## Pull
+
 * In a team, there will be more than one developer working on the code. The code in the server constantly keeps getting updated. But these changes will not be automatically downloaded into your local machine. To get the code into your local machine you need to pull. Pull will get the latest code of your selected branch into your local machine. 
+
+| Command | Explanation |
+| ------- | ----------- |
+| git pull origin branch_name | To pull the code to local machine from server |
+
+## Fetch
+
+* The process of downloading the code of a particular branch into our local machine from a server is called fetching.
+
+| Command | Explanation | 
+| ------- | ----------- |
+| git fetch origin branch_name | To fetch a particular branch |
