@@ -9,9 +9,9 @@
 4-File system
 5-All necessary files and explanation 
 ```
-## [Git](https://github.com/NrusinghaMohanty/missingSkill-doc/tree/master/Git)
+## [Git](https://github.com/NrusinghaMohanty/missingskill-learning/tree/master/Git%20%26%20Building%20block)
 
-### [Building Blocks](https://github.com/NrusinghaMohanty/missingskill-learning/blob/master/Git/Buliding%20Block.md)
+### [Building Blocks](https://github.com/NrusinghaMohanty/missingskill-learning/blob/master/Git%20%26%20Building%20block/Buliding_Block_.md)
 
 ```
 1-Programming language
@@ -30,7 +30,7 @@
 14-Project Management Tool
 15-Dev workflow
 ```
-### [Git](https://github.com/NrusinghaMohanty/missingskill-learning/blob/master/Git/git.md)
+### [Git](https://github.com/NrusinghaMohanty/missingskill-learning/blob/master/Git%20%26%20Building%20block/git.md)
 
 ```
 1-what is git?
